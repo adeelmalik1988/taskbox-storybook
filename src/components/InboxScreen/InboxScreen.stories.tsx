@@ -5,9 +5,9 @@ import * as TaskListStories from '../TaskList/TaskList.stories';
 import { action } from '@storybook/addon-actions'
 import { Provider } from 'react-redux';
 import TaskStories from '../Task/Task.stories';
-import store from '../../lib/store'
+//import store from '../../lib/store'
 
-/*
+
 const store = {
     getState: () => {
         return {
@@ -18,7 +18,6 @@ const store = {
     dispatch: action('dispatch')
 }
 
-*/
 
 export default {
     component: PureInboxScreen,
