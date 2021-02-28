@@ -44,9 +44,9 @@ const Task: FC<TaskPorps> = ({task ,onArchiveTask,onPinTask}) => {
             </div>
             <div className='action' onClick={event => event.stopPropagation()} >
                 {task?.stateTask !== 'TASK_ARCHIVED' && (
-                    <a onClick={() => onPinTask!(pinTask(task!.id))} >
+                    <div onClick={() => onPinTask!(pinTask(task!.id))} >
                         <span className='icon-star' />
-                    </a>
+                    </div>
                 )}
 
             </div>
